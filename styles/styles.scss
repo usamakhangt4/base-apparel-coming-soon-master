@@ -70,6 +70,7 @@ form {
   display: flex;
   justify-content: start;
   align-items: center;
+  position: relative;
 }
 input {
   width: 55%;
@@ -101,5 +102,18 @@ button {
   cursor: pointer;
   font-size: 2em;
   color: #fff;
-  margin-left: -60px;
+  margin-left: -50px;
+}
+.warning {
+  position: absolute;
+  top: 35%;
+  right: 52%;
+  color: orange;
+}
+.warnText {
+  position: absolute;
+  top: 110%;
+  left: 3%;
+  font-size: 14px;
+  color: hsl(0, 52%, 64%);
 }

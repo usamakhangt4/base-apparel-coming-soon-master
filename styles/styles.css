@@ -79,10 +79,6 @@ body {
   height: 100%;
 }
 
-.container .heroMobile {
-  display: none;
-}
-
 form {
   position: relative;
 }
@@ -145,12 +141,39 @@ footer {
   font-size: 1.3em;
 }
 
-@media (max-width: 1000px) {
+.heroMobile {
+  display: none;
+}
+
+.logoMobile {
+  display: none;
+}
+
+@media (max-width: 800px) {
   .heroMobile {
-    display: inline;
+    display: block;
+  }
+  .heroMobile img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
   }
   .heroDesktop {
     display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .logoMobile {
+    display: block;
+    padding: 5%;
+  }
+  .logoMobile img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

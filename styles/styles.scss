@@ -10,10 +10,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
-  background-image: $bgImage;
-  background-color: pink;
-  background-size: cover;
-  background-repeat: no-repeat;
+  //   background-image: $bgImage;
+  //   background-color: pink;
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
   .container {
     display: flex;
     justify-content: space-between;
@@ -21,6 +21,10 @@ body {
     flex-wrap: wrap;
     height: 100vh;
     .content {
+      background-image: $bgImage;
+      //   background-color: pink;
+      background-size: cover;
+      background-repeat: no-repeat;
       padding-left: 10%;
       flex: 10;
       display: flex;
@@ -128,8 +132,10 @@ button {
 }
 
 @media screen and (max-width: 1200px) {
+  * {
+    text-align: center;
+  }
   .container {
-    flex-direction: column-reverse;
-    flex-wrap: nowrap;
+    height: auto !important;
   }
 }

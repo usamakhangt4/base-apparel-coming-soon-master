@@ -11,9 +11,11 @@ function validate() {
   var email = document.getElementById("email");
   email = email.value;
   if (validateEmail(email)) {
+    document.getElementById("warnIcon").style.visibility = "hidden";
     result.innerHTML = email + " is a valid email";
     document.getElementById("warning").style.visibility = "hidden";
   } else {
+    document.getElementById("warnIcon").style.visibility = "visible";
     result.innerHTML = email + " is an invalid email";
     document.getElementById("warning").style.visibility = "visible";
   }

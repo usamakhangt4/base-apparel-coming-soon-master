@@ -100,7 +100,7 @@ input:focus {
 
 button {
   position: absolute;
-  top: 1%;
+  top: 0;
   right: 0;
   height: 44px;
   width: 80px;
@@ -119,6 +119,14 @@ button:hover {
 
 button:focus {
   outline: none;
+}
+
+.fa-exclamation-circle {
+  position: absolute;
+  top: 25%;
+  left: 70%;
+  color: #f96262;
+  visibility: hidden;
 }
 
 #result {

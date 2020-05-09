@@ -11,56 +11,40 @@
   <title>Frontend Mentor | Base Apparel coming soon page</title>
   <link rel="stylesheet" href="./styles/styles.css">
   <script src="./app.js" defer></script>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
 
   <div class="container">
     <div class="content">
-      <div class="logo">
-        <img src="./images/logo.svg" alt="">
-      </div>
+      <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
       <div>
-
-        <p class="title1">We're</p>
-        <p class="title2">coming <br> soon</p>
+        <p class="title1">we're</p>
+        <p class="title2">coming <br>soon</p>
+        <span class="pitch">Hello fellow shoppers! We're currently building our new <br> fashion store . Add your email
+          below to
+          stay-up-to
+          date with <br>announcements and our launch deals.</span>
       </div>
-      <p class="paragraph">Hello fellow shoppers! We're currently building our new<br> fashion store.
-        Add your email below to stay up-to-date with<br> announcements and our launch deals.</p>
-      <form action="#">
-        <input id="email" type="email" name="" id="" placeholder="Email Adress" required><span id="warning"
-          class="fa fa-warning warning"></span>
-        <span id="result" class="warnText"></span>
-        <button type="submit" onclick="validate()"><span class="fa fa-angle-right fa-1x"></span></button>
-      </form>
 
-
+      <div class="email">
+        <form action="#">
+          <input name="" id="email" required>
+          <button onclick="validate()" type="submit"> <i class="fa fa-angle-right fa-3x"></i> </button><br>
+        </form>
+        <span id="result"></span>
+      </div>
     </div>
-    <div class="hero">
-      <img src="./images/hero-desktop.jpg" alt="cute girl">
-    </div>
+    <div class="heroDesktop"><img src="./images/hero-desktop.jpg" alt="cute girl"></div>
+    <div class="heroMobile"><img src="./images/hero-desktop.jpg" alt="cute girl"></div>
   </div>
-
-
-
-
 
 
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/usamakhangt4/base-apparel-coming-soon-master">USAMA</a>.
     </p>
   </footer>
 </body>

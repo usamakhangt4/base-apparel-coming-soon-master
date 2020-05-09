@@ -14,8 +14,8 @@ function validate() {
     result.innerHTML = email + " is a valid email";
     document.getElementById("warning").style.visibility = "hidden";
   } else {
-    document.getElementById("warning").style.visibility = "visible";
     result.innerHTML = email + " is an invalid email";
+    document.getElementById("warning").style.visibility = "visible";
   }
   return false;
 }

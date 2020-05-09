@@ -14,6 +14,7 @@ body {
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
   background-image: url("../images/bg-pattern-desktop.svg");
+  background-color: pink;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -140,22 +141,27 @@ input:focus {
   border: 2px solid rgba(228, 183, 190, 0.603);
 }
 
-input:invalid {
-  border: 2px solid #f96262;
-}
-
 button {
   height: 55px;
   width: 100px;
   border-radius: 32px;
   background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   border: none;
-  -webkit-box-shadow: 0px 4px 10px #ce9797;
-          box-shadow: 0px 4px 10px #ce9797;
   cursor: pointer;
   font-size: 2em;
   color: #fff;
   margin-left: -50px;
+}
+
+button:hover {
+  -webkit-box-shadow: 0px 4px 10px #ce9797;
+          box-shadow: 0px 4px 10px #ce9797;
+  background-image: linear-gradient(135deg, #f8d8d8, #dfafaf);
+}
+
+button:focus {
+  outline: none;
+  border: none;
 }
 
 .warning {
@@ -163,6 +169,7 @@ button {
   top: 35%;
   right: 52%;
   color: orange;
+  visibility: hidden;
 }
 
 .warnText {
@@ -171,5 +178,16 @@ button {
   left: 3%;
   font-size: 14px;
   color: #d37373;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

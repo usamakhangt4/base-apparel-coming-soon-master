@@ -11,6 +11,7 @@ body {
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
   background-image: $bgImage;
+  background-color: pink;
   background-size: cover;
   background-repeat: no-repeat;
   .container {
@@ -88,7 +89,7 @@ input {
     border: 2px solid rgba(228, 183, 190, 0.603);
   }
   &:invalid {
-    border: 2px solid $softRed;
+    // border: 2px solid $softRed;
   }
 }
 
@@ -98,17 +99,25 @@ button {
   border-radius: 32px;
   background-image: $gradient2;
   border: none;
-  box-shadow: 0px 4px 10px $desaturatedred;
   cursor: pointer;
   font-size: 2em;
   color: #fff;
   margin-left: -50px;
+  &:hover {
+    box-shadow: 0px 4px 10px $desaturatedred;
+    background-image: $gradient1;
+  }
+  &:focus {
+    outline: none;
+    border: none;
+  }
 }
 .warning {
   position: absolute;
   top: 35%;
   right: 52%;
   color: orange;
+  visibility: hidden;
 }
 .warnText {
   position: absolute;
@@ -116,4 +125,11 @@ button {
   left: 3%;
   font-size: 14px;
   color: hsl(0, 52%, 64%);
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+  }
 }

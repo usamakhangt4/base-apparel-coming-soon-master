@@ -38,12 +38,13 @@
       </div>
       <p class="paragraph">Hello fellow shoppers! We're currently building our new<br> fashion store.
         Add your email below to stay up-to-date with<br> announcements and our launch deals.</p>
-      <form action="#" onsubmit="return validateEmail()">
-        <input id="email" type="email" name="" id="" placeholder="Email Adress"><span
+      <form action="#">
+        <input id="email" type="email" name="" id="" placeholder="Email Adress" required><span id="warning"
           class="fa fa-warning warning"></span>
-        <span class="warnText"> Please provide a valid email</span>
-        <button type="submit"><span class="fa fa-angle-right fa-1x"></span></button>
+        <span id="result" class="warnText"></span>
+        <button type="submit" onclick="validate()"><span class="fa fa-angle-right fa-1x"></span></button>
       </form>
+
 
     </div>
     <div class="hero">
